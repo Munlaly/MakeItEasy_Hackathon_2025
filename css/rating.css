@@ -1,0 +1,23 @@
+.rating {
+  text-align: center;
+  perspective: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.rating span {
+  cursor: pointer;
+  height:20px;
+  /*padding: 0 10px;*/
+  color: #fff;
+  opacity: 1;
+  transition: all 150ms;
+  display: inline-block;
+  font-size: 1.5rem;
+  
+}
+
+.rating span:hover,
+.rating span:hover ~ span {
+  color: gold;
+}

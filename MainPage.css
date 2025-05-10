@@ -1,0 +1,180 @@
+body{
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin :0px;
+    padding:0px;
+    box-sizing:border-box;
+    background: linear-gradient(to right, #1a2d42 , #2e4156,#c0c8ca);
+    color: black;
+    font-size: 1.5rem;
+    font-family: Arial;
+    
+}
+nav {
+    padding-top: 1rem;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5%;  
+}
+nav button{
+    
+    background-color: transparent;
+    border: solid black;
+}
+#leaderboard{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #2e4156;  
+}
+#leaderboard2{
+    border-top: none;
+}
+#leaderboard2 th {
+    background-color: #2e4156;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    border-top: none;  
+    border-bottom: 3px solid black; 
+}
+#leaderboard2 td {
+    padding: 12px;
+    border-top: none;  
+    border-bottom: 1px solid black; 
+}
+#topbox{
+    z-index: 12;
+    /*ez a doboz amiben van a leaderboard*/
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+box-shadow: 10px 0px 10px black;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    background: radial-gradient(circle, rgb(32, 77, 136) 40%, #09203f 100%);
+    width: 25rem;
+}
+.tooltip {
+    padding-bottom: 5rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.leaderboard_buton_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leaderboard_buton_content:hover .tooltip {   
+    opacity: 1;
+}
+.podium {
+    padding: 0.4rem;
+}
+.moto_box {
+    padding-bottom:5vh ;
+    margin: 17vh;
+    position: relative;
+    top: 35%;
+    font-family: "Bungee Inline","Sigmar",Arial;
+    color: white;
+    font-size: 3rem;
+}
+#user{
+    background-color: transparent;
+}
+#pictures-grid {
+    display: none;
+   grid-template-columns: 20% 20% 20%;
+    gap: 15px;
+    justify-content:center;
+
+    margin-top: 20px;
+    margin-left:10%;
+    margin-right:10%;
+    width: 75%;
+
+    
+}
+.picbox {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.uploaded-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#topbox-content{
+    background-color: transparent;
+}
+#topleaderbox{
+    color: white;
+    position: absolute;
+    top: 0%;
+}
+.quest_card{
+    position: relative;
+    box-shadow: 0px 0px 10px 2px;
+    display: flex;
+    background-color: rgb(25, 60, 106);
+    background: radial-gradient(circle, rgb(32, 77, 136) 40%, #09203f 100%);
+    height: 5rem;
+    width: 16rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 20rem;
+}
+.quest_titel{
+    padding-left: 1rem;
+    font-family: "Bungee Inline","Cinzel Decorative";
+    color: #c0c8ca;
+}
+.star {
+    font-size:2.5rem;
+}
+
+#account {
+    font-family: "Bungee Inline";
+    text-decoration: underline;
+}
+
+.bung{
+    font-family: "Bungee Inline";
+    
+}
+#holder{
+    position: absolute;
+    width: 7rem;
+    right: 6%;
+    bottom: 0%;
+    z-index: -4;
+}
+#counter{
+    margin-top:15px;
+}
+#shoptext{
+    color: white;
+    text-decoration: none;
+    
+}

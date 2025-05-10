@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    pad: 0;
+   box-sizing: border-box;
+   background: linear-gradient(to right, #1a2d42 , #2e4156,#c0c8ca);
+   font-size: 1.5rem;
+   font-family: Arial;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #1a2d42 , #2e4156,#c0c8ca);
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+
+}
+
+nav h1{
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+nav img{
+    height: 80px;
+    width: auto;
+}
+
+#wrapper{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 20px;
+    width: 75%;
+}
+
+
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container img{
+    width: 100%;  
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.full-width {
+    grid-column: span 3; 
+    
+}
+
+.full-width img{
+    width: 85%;
+    height: auto;
+}
+
+
+.text-overlay-large{
+    position: absolute;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.text-overlay-small{
+    position: absolute;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.img-container:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#shoppingCart{
+    cursor: pointer;
+}
+
+#popUp{
+    display: none;
+    pointer-events: none;
+    margin: 0;
+    position: fixed;
+    width:20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:transparent;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    min-width: 400px;
+    color: white;
+    
+    overflow-y: hidden;
+}
+
+#minimize{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 8%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: larger;
+}
+
+#order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    
+    height: 10rem;
+    overflow-y: scroll;
+}
